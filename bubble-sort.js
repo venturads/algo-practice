@@ -1,6 +1,8 @@
 // bubble sort
+
+const ouput = document.getElementById('app');
 function bubbleSort(arr) {
-    console.log(arr);
+    ouput.innerHTML = arr;
 }
 
 const nums = [5,4,3,2,1];
