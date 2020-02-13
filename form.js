@@ -1,7 +1,7 @@
 let app = document.getElementById('app');
-let getage = document.getElementById('age').value;
 
-function ageCheck(getage) {
+function ageCheck() {
+    let getage = document.getElementById('age').value;
     console.log(getage);
     alert(getage);
     if(age >= 21) {
