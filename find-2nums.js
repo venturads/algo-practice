@@ -9,7 +9,7 @@ function find2nums(arr) {
             if((20/arr[i]) == arr[j]) {
                 return console.log("numbers: ", arr[j] + " x " + arr[i] + " = 20");
             }else{
-                return console.log("can't find number");
+                return console.log("can't find the number " + (20/arr[i]));
             }
         }
     }
