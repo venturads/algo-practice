@@ -7,7 +7,7 @@ function find2nums(arr) {
         for(let j=i+1; i<arr.length;j++) {
             console.log("num: ", arr[j]);
             if((20/arr[i]) == arr[j]) {
-                return console.log("numbers: ", arr[j]);
+                return console.log("numbers: ", arr[j] + " x " + arr[i] + " = 20");
             }
         }
     }
