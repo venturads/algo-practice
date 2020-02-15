@@ -5,9 +5,9 @@ const arr = [2,3,11,4,6,21,5,9,10];
 function find2nums(arr) {
     for(let i=0; i<arr.length;i++) {
         for(let j=i+1; i<arr.length;j++) {
-            console("num: ", arr[j]);
+            console.log("num: ", arr[j]);
             if((20/arr[i]) == arr[j]) {
-                 console.log("numbers: ", arr[j]);
+                return console.log("numbers: ", arr[j]);
             }
         }
     }
