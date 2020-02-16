@@ -8,6 +8,6 @@ user.set(name.charCodeAt(0), name, 41);
 
 output.innerHTML = user.get(name.charCodeAt(0));
 
-for(let [key, value] of users) {
+users.forEach(function(value, key) {
     console.log(key + ' = ' + value);
-}
+})
