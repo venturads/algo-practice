@@ -4,6 +4,10 @@ let output = document.getElementById('app');
 
 user.set(name.charCodeAt(0), name, 41);
 
-console.log(user.get(name.charCodeAt(0)));
+//console.log(user.get(name.charCodeAt(0)));
 
 output.innerHTML = user.get(name.charCodeAt(0));
+
+for(let [key, value] of users) {
+    console.log(key + ' = ' + value);
+}
