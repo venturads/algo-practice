@@ -1,4 +1,4 @@
-let user = new user();
+let user = new Map();
 let name = "kobe";
 let output = document.getElementById('app');
 
