@@ -11,7 +11,7 @@ output.innerHTML = user.get(name.charCodeAt(0));
 
 users.forEach(function(value, key) {
     user.set(key, value);
-    console.log(key + ' = ' + value);
+    output.innerHTML = (key + ' = ' + value);
 })
 
-console.log(user.get(24));
+console.log(user.get(33));
