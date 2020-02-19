@@ -1,12 +1,6 @@
-const leftNode = [1,3,2,5];
-const rightNOde = [2,1,3,null,4,null,7];
-let len = leftNode.length, n;
+var array1 = [1,2,3,4];
+var array2 = [5,6,7,8];
 
-function mergeTrees(leftNode, rightNOde) {
-    // for(n of leftNode) {
+var sum = array1.map( (num, idx) => num + array2[idx] ); // [6,8,10,12]
 
-    // }
-    console.log(leftNode.concat(rightNOde));
-}
-
-mergeTrees(leftNode, rightNOde);
+console.log(sum);
