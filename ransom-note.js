@@ -5,9 +5,10 @@
  */
 var canConstruct = function(ransomNote, magazine) {
     for(let i of ransomNote) {
-        console.log(ransomNote[i], magazine[i])
+        console.log(ransomNote.split(""), magazine[i])
         return ransomNote[i] == magazine[i] ? true : false
     }
 }
-
-canConstruct("aaa","aab");
+let ran = "aaa";
+let mag = "aab";
+canConstruct(ran.split(""),mag.split(""));
