@@ -11,4 +11,4 @@ var canConstruct = function(ransomNote, magazine) {
 }
 let ran = "aaa";
 let mag = "aab";
-canConstruct(ran.split(""),mag.split(""));
+canConstruct(ran,mag);
