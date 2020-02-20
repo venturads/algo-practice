@@ -5,7 +5,7 @@
  */
 var canConstruct = function(ransomNote, magazine) {
     for(let i of ransomNote) {
-        console.log(ransomNote.split(""), magazine[i])
+        console.log(ransomNote[i], magazine[i])
         return ransomNote[i] == magazine[i] ? true : false
     }
 }
