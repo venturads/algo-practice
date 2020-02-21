@@ -1,7 +1,7 @@
-let myHash = {};
-myHash[0] = "kobe";
-myHash[1] = 23;
+let myHash = new Map();
+myHash.set(1, "kobe");
+myHash.set(2, 23);
 
 for(let i of myHash) {
- 
+    console.log(myHash.get(i));
 }
