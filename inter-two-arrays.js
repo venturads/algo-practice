@@ -21,5 +21,10 @@ function inter(nums1, nums2) {
     return result;
 };
 
+const intersect = (nums1, nums2) => {
+    const seen = {};
+    for (n of nums1) seen[n] ? seen[n]++ : seen[n] = 1;
+    return nums2.filter(e => seen[e] ? seen[e]-- : false)
+};
 
 console.log(inter(nums1, nums2));
