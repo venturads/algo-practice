@@ -10,3 +10,5 @@ var countPrimes = function(n) {
     }
     return cnt;
 };
+
+console.log(countPrimes(10));
