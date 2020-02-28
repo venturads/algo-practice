@@ -8,7 +8,8 @@ var getSum = function(a, b) {
     while(arr2.length < b) {
         arr2.push(1);
     }
+    console.log(arr.length, arr2.length);
     return arr.concat(arr2).length;
 }
 
-console.log(getSum(2,3));
+console.log(getSum(1,2));
