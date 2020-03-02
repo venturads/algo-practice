@@ -13,4 +13,7 @@ function getTime(num) {
 
 console.log(getTime(2));
 console.log(getTime(5));
+console.log(getTime(5));
+console.log(getTime(12));
 console.log(getTime(2));
+console.log(getTime(12));
