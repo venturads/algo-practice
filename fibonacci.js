@@ -1,5 +1,5 @@
 let fibMap = new Map();
-
+// fibonacci sequence with memoizations
 function fib(n) {
     if(fibMap.has(n)) {
         return fibMap.get(n);
@@ -15,4 +15,4 @@ function fib(n) {
     }
 }
 
-console.log(fib(8));
+console.log(fib(200));
