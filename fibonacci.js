@@ -1,9 +1,13 @@
+let fibMap = new Map();
+
 function fib(n) {
-    if(x == 0 || x == 1) {
+    if(n == 1) {
+        return 0;
+    }else if(n == 2) {
         return 1;
     }else {
-        return (fib(x-1) + fib(x-2));
+        return (fib(n-1) + fib(n-2));
     }
 }
 
-console.log(fib(2));
+console.log(fib(8));
