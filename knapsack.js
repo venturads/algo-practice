@@ -1,4 +1,7 @@
-function knapsack() {
+let w = [null,1,2,4,2,5];
+let v = [null,5,3,5,3,2];
+
+function knapsack(n, c) {
     if(n==0 || c==0) {
         result = 0;
     }else if(w[n] > c) {
@@ -6,9 +9,8 @@ function knapsack() {
     }else {
         temp1 = knapsack(n-1, c);
         temp2 = v[n] + knapsack(n-1, c-w[n]);
-        result = max{temp1, temp2};
+        result = Math.max(temp1, temp2);
     } return result;
 }
 
-let w = [1,2,4,2,5];
-let c = [5,3,5,3,2];
+console.log(knapsack(5, 10));
