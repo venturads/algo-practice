@@ -1,5 +1,5 @@
-let w = [null,1,2,4,2,5];
-let v = [null,5,3,5,3,2];
+let w = [null,10,20,30];
+let v = [null,1,2,3];
 
 function knapsack(n, c) {
     if(n==0 || c==0) {
@@ -13,4 +13,4 @@ function knapsack(n, c) {
     } return result;
 }
 
-console.log(knapsack(5, 10));
+console.log(knapsack(3, 50));
