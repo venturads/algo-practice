@@ -1,12 +1,12 @@
-function pali(temp) {
-    let len = temp.length;
-    for(let n of temp) {
-        if(n == temp[len-1]) {
+function pali(p) {
+    let len = p.length;
+    for(let n of p) {
+        if(p[n] == p[len-1]) {
             console.log(n);
-            return true + temp[0] + temp[len-1];
+            p[0] + p[len-1];
         }console.log(n);
     } 
     return false;
 }
 
-console.log(pali('sossaos'));
+console.log(pali('abba'));
