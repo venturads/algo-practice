@@ -1,11 +1,11 @@
 function pali(p) {
-    let len = p.length;
+    let len = p.length-1;
     for(let n in p) {
-        if(p[n] == p[len-1]) {
-            console.log(p[n]);
-            p[0] + p[len-1];
+        if(p[n] != p[len]) {
+            return false + " " + n + p[len];
         }else{
-            return false + " " + n + p[len-1];
+            console.log(p[n] + n);
+            len--;
         }
     } 
     return true;
