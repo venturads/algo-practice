@@ -11,4 +11,4 @@ function pali(p) {
     return true;
 }
 
-console.log(pali('abba'));
+console.log(pali('abgba'));
