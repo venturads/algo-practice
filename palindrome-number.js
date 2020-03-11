@@ -1,11 +1,16 @@
 function isPalindrome(x) {
+    //x = Math.abs(x);
+    x = x.toString();
     let len = x.length-1;
-    x = Math.abs(x);
-    if(x[0] != x[len]) {
-       return false;
-       } else {
-        return true;
-    }
+
+    for(let n in x) {
+        if(x[n] != x[len]) {
+            return false;
+        }else{
+            len--;
+        }
+    } 
+    return true;
 };
 
-isPalindrome(-121);
+console.log(isPalindrome(-121));
