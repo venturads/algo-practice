@@ -2,10 +2,11 @@ function find_duplicate_in_array(arra1) {
     var object = {};
     var result = [];
 
-    arra1.forEach(function (item) {
+    arra1.forEach(item => {
       if(!object[item])
           object[item] = 0;
         object[item] += 1;
+        console.log(object);
     })
 
     for (var prop in object) {
