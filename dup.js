@@ -1,18 +1,13 @@
-let arr = [1,2,3,4,1,2];
+let nums = [1,2,3,4,1,2,4,3];
 let newArr = new Map();
 
-function getDup() {
-    for(let n of arr) {
+function getDup(arr) {
+    for(let n=0; n< arr.length; n++) {
+        //console.log(arr[n]);
         if(arr[n] != newArr.get(n)) {
             newArr.set(arr[n], 1);
-        }else{
-            newArr.set(arr[n], 2);
         }
     }
-    for(let i of newArr.entries()) {
-        console.log(i);
-    }
-
 }
 
-console.log(getDup(arr));
+console.log(getDup(nums));
