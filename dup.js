@@ -8,6 +8,12 @@ function getDup(arr) {
             newArr.set(arr[n], 1);
         }
     }
+     for(let i of newArr.entries()) {
+         if() {
+            console.log(i);
+         }
+        
+     }
 }
 
 console.log(getDup(nums));
